@@ -1,0 +1,272 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #3e3e3e;
+    background: #fafaf8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(139,90,43,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #8b5a2b;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5a5a5a;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #cd853f;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #f4e4d7 0%, #e8d5c4 100%);
+    color: #3e3e3e;
+    padding: 80px 0;
+    min-height: 500px;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #8b5a2b;
+}
+
+.hero-text h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: #5a5a5a;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    background: rgba(205,133,63,0.2);
+    border-radius: 50%;
+    border: 4px solid #cd853f;
+    box-shadow: 0 8px 20px rgba(139,90,43,0.15);
+}
+
+.btn-primary {
+    background: #cd853f;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: #b8742f;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139,90,43,0.3);
+}
+
+/* Education Section */
+.education {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.education .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.education-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.education-text h1 {
+    font-size: 2.5rem;
+    color: #8b5a2b;
+    margin-bottom: 1rem;
+}
+
+.education-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.school-photo {
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(135deg, #daa970 0%, #8b5a2b 100%);
+    border-radius: 10px;
+    flex-shrink: 0;
+    box-shadow: 0 10px 30px rgba(139,90,43,0.2);
+}
+
+/* Projects Section */
+.projects {
+    padding: 80px 0;
+    background: #f9f6f2;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #8b5a2b;
+    margin-bottom: 3rem;
+}
+
+.project-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    height: 250px;
+    background: linear-gradient(135deg, #f5deb3 0%, #deb887 100%);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 5px 15px rgba(139,90,43,0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(139,90,43,0.25);
+}
+
+.project-card:nth-child(2) {
+    background: linear-gradient(135deg, #e8c99e 0%, #cd9968 100%);
+}
+
+.project-card:nth-child(3) {
+    background: linear-gradient(135deg, #daa970 0%, #b8894f 100%);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #6b4423 0%, #8b5a2b 100%);
+    color: #f5f5f5;
+    padding: 40px 0 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contact h2,
+.media h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f5deb3;
+}
+
+.contact p {
+    margin-bottom: 0.5rem;
+    color: #e8d5c4;
+}
+
+.media a {
+    display: block;
+    color: #f5deb3;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s;
+    padding: 5px 0;
+}
+
+.media a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+footer > .container > div:last-child {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(245,222,179,0.3);
+    color: #e8d5c4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-text h3 {
+        font-size: 1.2rem;
+    }
+    
+    .school-photo {
+        width: 100%;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
